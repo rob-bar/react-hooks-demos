@@ -15,13 +15,13 @@ const App = props => {
     <Router>
       <div>
         <Route path="/" component={Nav} />
-        <Route path="react-hooks-demos/demo1" component={Demo1} />
-        <Route path="react-hooks-demos/demo2" component={Demo2} />
-        <Route path="react-hooks-demos/demo3" component={Demo3} />
-        <Route path="react-hooks-demos/demo4" component={Demo4} />
-        <Route path="react-hooks-demos/demo5" component={Demo5} />
-        <Route path="react-hooks-demos/demo6" component={Demo6} />
-        <Route path="react-hooks-demos/demo7" component={Demo7} />
+        <Route path="demo1" component={Demo1} />
+        <Route path="demo2" component={Demo2} />
+        <Route path="demo3" component={Demo3} />
+        <Route path="demo4" component={Demo4} />
+        <Route path="demo5" component={Demo5} />
+        <Route path="demo6" component={Demo6} />
+        <Route path="demo7" component={Demo7} />
       </div>
     </Router>
   );
