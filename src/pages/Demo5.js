@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import Counter from './Counter';
-const App = () => {
+const Demo5 = () => {
   const [dishes, setDishes] = useState([]);
 
   const fetchDishes = async () => {
@@ -19,13 +18,13 @@ const App = () => {
   return (
     <div className="main-wrapper">
       <h1>useEffect Fetch</h1>
-      {dishes.map(dish => (
-        <article className="dish-card dish-card--withImage">
+      {dishes.map((dish, i) => (
+        <article className="dish-card dish-card--withImage" key={i}>
           <h3>{dish.name}</h3>
           <p>{dish.desc}</p>
           <div className="ingredients">
-            {dish.ingredients.map(ingredient => (
-              <span>{ingredient}</span>
+            {dish.ingredients.map((ingredient, k) => (
+              <span key={k}>{ingredient}</span>
             ))}
           </div>
         </article>
@@ -34,4 +33,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Demo5;

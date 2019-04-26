@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
-const App = () => {
+import React, { useRef } from 'react';
+
+const Demo6 = () => {
   const inputEl = useRef(null);
   const onButtonClick = () => {
     // `current` points to the mounted text input element
@@ -14,4 +15,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Demo6;

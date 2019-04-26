@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Toggle from './Toggle';
+import Toggle from '../components/Toggle';
 
-const App = () => {
+const Demo2 = () => {
   // const [value, setValue] = useState(initialState);
   const [name, setName] = useState('');
 
@@ -33,4 +33,4 @@ const formSubmit = (name, setName) => {
   setName('');
 };
 
-export default App;
+export default Demo2;

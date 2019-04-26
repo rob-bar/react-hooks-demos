@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
-const App = () => {
-  const [name, setName] = useState('');
-
-  useEffect(() => {
-    document.title = name;
-  });
+const Demo4 = () => {
+  const [name, setName] = useTitleInput('');
 
   return (
     <div className="main-wrapper">
-      <h1>useEffect</h1>
+      <h1>Custom Hook - useTitleInput</h1>
       <form
         onSubmit={e => {
           e.preventDefault();
@@ -26,4 +22,15 @@ const App = () => {
   );
 };
 
-export default App;
+// TODO move to hooks/useTitleInput.js while in demo
+function useTitleInput(initialValue) {
+  const [value, setValue] = useState(initialValue);
+
+  useEffect(() => {
+    document.title = value;
+  });
+
+  return [value, setValue];
+}
+
+export default Demo4;

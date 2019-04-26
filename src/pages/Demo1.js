@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const App = () => {
+const Demo1 = () => {
   // const [value, setValue] = useState(initialState);
   const [name, setName] = useState('');
 
@@ -13,4 +13,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Demo1;
