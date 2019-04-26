@@ -14,7 +14,7 @@ const App = props => {
   return (
     <Router>
       <div>
-        <Route path="react-hooks-demos/" component={Nav} />
+        <Route path="/" component={Nav} />
         <Route path="react-hooks-demos/demo1" component={Demo1} />
         <Route path="react-hooks-demos/demo2" component={Demo2} />
         <Route path="react-hooks-demos/demo3" component={Demo3} />
